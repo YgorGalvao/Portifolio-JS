@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Black Ops 7 — Propaganda</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>Black Ops 7</h1>
+      <nav>
+        <a href="#novidades">Novidades</a>
+        <a href="#armas">Armas</a>
+        <a href="#mapas">Mapas</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-inner">
+        <div>
+          <h2>O futuro da guerra está chegando</h2>
+          <p>Descubra armas, mapas e mecânicas reveladas do Call of Duty: Black Ops 7.</p>
+          <a class="btn" href="#novidades">Saiba mais</a>
+        </div>
+        <figure class="hero-art">
+          <img src="reveal.jpeg">
+        </figure>
+      </div>
+    </section>
+
+    <!-- Novidades -->
+    <section class="section" id="novidades">
+      <div class="container">
+        <h2>Novidades</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Multiplayer redesenhado</h3>
+            <p>Movimentação, modos e progressão atualizados; 16 mapas no lançamento e 6 já na beta.</p>
+            <small>Fonte: comunicado oficial da Treyarch.</small>
+          </article>
+
+          <article class="card">
+            <h3>Mais formas de desbloquear camos</h3>
+            <p>Sistemas expandidos de camos de arma e desafios semanais para progressão.</p>
+            <small>Fonte: cobertura do reveal.</small>
+          </article>
+
+          <article class="card">
+            <h3>Zumbis e crossovers</h3>
+            <p>Novas experiências no modo Zombies com personagens clássicos e mecânicas modernas.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Armas -->
+    <section class="section" id="armas">
+      <div class="container">
+        <h2>Armas vazadas e confirmadas</h2>
+        <p class="muted">Abaixo estão algumas armas que apareceram nos trailers</p>
+
+        <div class="filters">
+          <button data-filter="all" class="active">Todas</button>
+          <button data-filter="assaultrifle">Assault</button>
+          <button data-filter="smg">SMG</button>
+          <button data-filter="sniper">Sniper</button>
+        </div>
+
+        <div id="gallery" class="grid">
+          <div class="card weapon assaultrifle" data-name="Peacekeeper">
+            <img src="peacekeepermk1.png" alt="Peacekeeper — Black Ops 7" />
+            <h4>Peacekeeper</h4>
+            <p>Assault rifle futurista detectado no trailer.</p>
+            <button class="view" data-img="assets/weapon-peacekeeper.jpg" data-title="Peacekeeper">Ver</button>
+          </div>
+
+          <div class="card weapon smg" data-name="Echo 12">
+            <img src="dravec45.png" alt="Echo 12 — Black Ops 7" />
+            <h4>Echo 12 (Shotgun)</h4>
+            <p>Shotgun vista em gameplay — pode entrar na rotação inicial.</p>
+            <button class="view" data-img="assets/weapon-echo12.jpg" data-title="Echo 12">Ver</button>
+          </div>
+
+          <div class="card weapon sniper" data-name="VS Recon">
+            <img src="vsrecon.png" alt="VS Recon — Black Ops 7" />
+            <h4>VS Recon (Sniper)</h4>
+            <p>Sniper de alta precisão vista em cortes do trailer.</p>
+            <button class="view" data-img="assets/weapon-vsrecon.jpg" data-title="VS Recon">Ver</button>
+          </div>
+        </div>
+
+        <p class="sources">Fontes: sites oficial activision.</p>
+      </div>
+    </section>
+
+    <!-- Mapas -->
+    <section class="section" id="mapas">
+      <div class="container">
+        <h2>Mapas 6v6</h2>
+        <p>O multiplayer contará com cenários variados — desde plataformas marítimas até cidades com neon; mapas clássicos remasterizados também retornarão.</p>
+        <div class="grid maps">
+          <figure class="map">
+            <img src="mapa1.png" alt="Map 1" />
+            <figcaption>Blackheart — Core 6v6, Playable at Beta, Small-sized</figcaption>
+          </figure>
+          <figure class="map">
+            <img src="mapa2.png" alt="Map 2" />
+            <figcaption>Cortex — Core 6v6, Playable at Beta, Small-sized</figcaption>
+          </figure>
+          <figure class="map">
+            <img src="mapa3.png" alt="Map 3" />
+            <figcaption>Exposure — Core 6v6, Playable at Beta, Medium-sized</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal para ver imagens -->
+    <div id="modal" class="modal" aria-hidden="true">
+      <div class="modal-inner">
+        <button id="modal-close" class="modal-close" aria-label="Fechar">✕</button>
+        <img id="modal-img" src="" alt="" />
+        <h3 id="modal-title"></h3>
+      </div>
+    </div>
+
+  </main>
+
+  <footer id="contato" class="site-footer">
+    <div class="container">
+      <p>Projeto de portfolio</p>
+      <p class="muted">Créditos das informações: Call of Duty | Activision</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
